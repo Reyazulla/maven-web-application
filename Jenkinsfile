@@ -10,6 +10,7 @@ stage('Build')
 {
   sh "${mavenHome}/bin/mvn clean package"
 }
+    /*
 stage('ExecuteSonarQubeReport')
 {
   sh "${mavenHome}/bin/mvn sonar:sonar"
@@ -33,5 +34,5 @@ stage('SendEmailNodification')
 regards ,
 reyzaulla''', cc: 'reyazansar@gmail.com', from: '', replyTo: '', subject: 'build over', to: 'reyazansar@gmail.com'
 }
-
+*/
 }
